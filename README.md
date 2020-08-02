@@ -11,8 +11,8 @@ para análise de um juiz cadastrado no sistema com menor número de processos.
 
 ## Requisito do sistema
 1. [ ] Ler o arquivo ​TABELA_DE_CLASSES_ATIVAS.csv ​e inserir os dados em uma base de
-dados ao iniciar a aplicação;
-1. [X] Cadastrar, listar e pesquisa de processo;
+dados ao iniciar a aplicação
+1. [X] Cadastrar, listar e pesquisa de processo
 <ol>
 	<li> [X] O número do processo (​campo nr_processo tabela tb_processo​) deve ser
 		calculado conforme a regra a seguir:
