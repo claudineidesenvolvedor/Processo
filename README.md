@@ -44,8 +44,8 @@ dados ao iniciar a aplicação;
 encaminhado para algum juiz.
 	</li>
 </ol>
-1. [X] Validar o endereço fornecido pela parte no momento do cadastro em algum serviço de
-busca de endereço.Ex : [VIACEP](​https://viacep.com.br/)
+1.[X] Validar o endereço fornecido pela parte no momento do cadastro em algum serviço de
+busca de endereço.Ex : <a href ="https://viacep.com.br/">VIACEP</a>
 
 ## Tecnologias/Outros:
 1. Spring Boot 2.3.2
