@@ -38,8 +38,8 @@ dados ao iniciar a aplicação
 		processo. Ex: autor e réu
 	</li>
 </ol>
-4. [X] Cadastrar, listar e pesquisa de juiz
-5. [ ] API deve ter um serviço que monitore a cada 5 minutos os processos cadastrados,
+4. [X] Cadastrar, listar e pesquisa de juíz.
+5. [x] API deve ter um serviço que monitore a cada 5 minutos os processos cadastrados,
 	fazendo o vínculo do mesmo com o juiz que tem menos processos ( pode escolher o
 	tempo, mas o mesmo não pode ser superior a 10 )
 <ol>
