@@ -13,7 +13,7 @@
 para análise de um juiz cadastrado no sistema com menor número de processos.
 
 ## Requisito do sistema
-1. [ ] Ler o arquivo ​TABELA_DE_CLASSES_ATIVAS.csv ​e inserir os dados em uma base de
+1. [X] Ler o arquivo ​TABELA_DE_CLASSES_ATIVAS.csv ​e inserir os dados em uma base de
 dados ao iniciar a aplicação
 2. [X] Cadastrar, listar e pesquisa de processo
 <ol>
