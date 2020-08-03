@@ -57,3 +57,4 @@ busca de endereço.Ex : <a href ="https://viacep.com.br/">VIACEP</a>
 1. MAVEN (Dependency Manager).
 1. postgresql 42.2.
 1. lombok 1.18.
+1. Função Lambda
