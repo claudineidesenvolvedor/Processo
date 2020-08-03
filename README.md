@@ -5,6 +5,9 @@
 
 >Projeto base para um projeto novo, tela mestre-detalhe utilizando componentes primefaces e obedecendo a responsividade para dispositivos com telas menores.
 
+## Especificação de uso
+>Para testar o nosso serviço eu vou usar um plugin do Firefox que chama HttpRequester, mas se você quiser pode usar uma outra aplicação como o SoapUI, vamos aos testes, com HttpRequester maker aberto vamos adicionar a URL http://localhost:8090/service/
+
 ## Especificação do Teste
 >Desenvolva uma API RESTful para possibilitar o cadastro de processos e a sua distribuição
 para análise de um juiz cadastrado no sistema com menor número de processos.
@@ -44,7 +47,7 @@ dados ao iniciar a aplicação
 encaminhado para algum juiz.
 	</li>
 </ol>
-1. - [] Validar o endereço fornecido pela parte no momento do cadastro em algum serviço de
+1. [X] Validar o endereço fornecido pela parte no momento do cadastro em algum serviço de
 busca de endereço.Ex : <a href ="https://viacep.com.br/">VIACEP</a>
 
 ## Tecnologias/Outros:
