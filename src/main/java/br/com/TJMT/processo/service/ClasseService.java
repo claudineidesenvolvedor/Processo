@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.TJMT.processo.Csv;
 import br.com.TJMT.processo.model.ClasseModel;
 import br.com.TJMT.processo.model.ResponseModel;
 import br.com.TJMT.processo.repository.ClasseRepository;
@@ -45,26 +46,7 @@ public class ClasseService {
 		}
 	}
 
-	/**
-	 * ATUALIZAR O REGISTRO DE UMA CLASSE
-	 * 
-	 * @param classeModel
-	 * @return
-	*/
-	@RequestMapping(value = "/classe", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public @ResponseBody ResponseModel atualizar(@RequestBody ClasseModel classeModel) {
-
-		try {
-
-			this.classeRepository.save(new ClasseEntity(classeModel));
-
-			return new ResponseModel(1, "Registro atualizado com sucesso!");
-
-		} catch (Exception e) {
-
-			return new ResponseModel(0, e.getMessage());
-		}
-	} 
+	
 
 	/**
 	 * CONSULTAR TODAS AS CLASSE
@@ -96,26 +78,5 @@ public class ClasseService {
 		return new ClasseModel(this.classeRepository.findById(codigo));
 	} 
 
-	/***
-	 * EXCLUIR UM REGISTRO PELO CÓDIGO
-	 * 
-	 * @param codigo
-	 * @return
-	*/
-	@RequestMapping(value = "/classe/{codigo}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public @ResponseBody ResponseModel excluir(@PathVariable("codigo") long codigo) {
-
-		ClasseModel classeModel = new ClasseModel(this.classeRepository.findById(codigo));
-
-		try {
-
-			this.classeRepository.delete(new ClasseEntity(classeModel));
-
-			return new ResponseModel(1, "Registro excluido com sucesso!");
-
-		} catch (Exception e) {
-			return new ResponseModel(0, e.getMessage());
-		}
-	} 
-
+	
 }

@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
+//@AllArgsConstructor
 public class ClasseModel {
 
 	private long id;
@@ -20,6 +20,13 @@ public class ClasseModel {
 
 	public ClasseModel() {
 		super();
+	}	
+	public ClasseModel(long id,String cnpj,String descricaoClasse,String sigla,String tipo) {
+		this.id = id;
+		this.cnpj = cnpj;
+		this.descricaoClasse = descricaoClasse;
+		this.sigla = sigla;
+		this.tipo = tipo;
 	}
 
 	public ClasseModel(ClasseEntity classeEntity) {

@@ -11,8 +11,6 @@ public interface ClasseRepository extends Repository<ClasseEntity, Long> {
 	
 	void save(ClasseEntity classeEntity);
 	
-	
-	void delete(ClasseEntity classeEntity);
 
 	ClasseEntity  findById(Long id);
 	

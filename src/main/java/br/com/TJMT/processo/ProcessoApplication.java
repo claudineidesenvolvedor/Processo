@@ -28,11 +28,14 @@ public class ProcessoApplication {
 	@Bean(name = "hibernateProperties")
 	public Properties hibernateProperties() {
 		Properties properties = new Properties();
+		properties.setProperty("javax.persistence.jdbc.driver", "org.postgresql.Driver");
+		properties.setProperty("javax.persistence.jdbc.url", "jdbc:postgresql://localhost:5432/processo");
+		properties.setProperty("javax.persistence.jdbc.user", "postgres");
+		properties.setProperty("javax.persistence.jdbc.password", "68302187");
 		properties.setProperty("hibernate.hbm2ddl.auto", "create");
 		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 		properties.setProperty("hibernate.show_sql", "true");
 		properties.setProperty("hibernate.format_sql", "true");
-
 		return properties;
 	}
 
@@ -49,10 +52,5 @@ public class ProcessoApplication {
 		emf.setJpaProperties(properties);
 		return emf;
 	}
-	@Bean
-	public void teste() {	
-		
-		//EntityManagerFactory em = new ;
-	}
-
+	
 }
